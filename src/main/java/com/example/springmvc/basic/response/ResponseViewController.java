@@ -18,7 +18,7 @@ public class ResponseViewController {
         return "response/hello";
     }
 
-    @RequestMapping("/response/hello")
+    @RequestMapping("/response/hello") // 명시성이 떨어져서 권장되지 않는 방식
     public void responseViewV3(Model model) {
         model.addAttribute("data", "hello!!");
     }
